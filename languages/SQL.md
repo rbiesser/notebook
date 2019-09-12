@@ -3,7 +3,18 @@ SQL
 
 The name SQL stands for Structured Query Language. It is pronounced “S-Q-L” and can also be pronounced “sequel.”
 
-SQL is a computer language designed to get information from data that is stored in a relational database.
+SQL is a computer language designed to get information from data that is stored in a relational database. Working with a database follows the same basic `CRUD (Create, Read, Update, Delete)` operations. You can then define that operations act on the structure of a table or they act on the data contained within the table.
+
+Standard SQL should be the same for any relational database, however, view the [list of databases](../applications/databases.md) for implementations that deviate from the standard for a specific database.
+
+[Overview of the select statement](#overview-of-the-select-statement)  
+[Create Tables and Views](#create-tables-and-views)  
+[Deleting a table](#deleting-a-table)  
+Updating Tables  
+[Adding one new row to a table](#adding-one-new-row-to-a-table)  
+[Changing data in the rows already in a table](#changing-data-in-the-rows-already-in-a-table)  
+[Deleting rows from a table](#deleting-rows-from-a-table)
+
 
 Definitions
 ---
@@ -53,7 +64,7 @@ Other Keywords
 ---
 Keyword | Usage | Example
 --- | --- | ---
-* | Retrieve all columns | `select` * <br>or<br>`select` table_name.*
+`*` | Retrieve all columns | `select` * <br>or<br>`select` table_name.*
 `as` | Rename a selected column | `select` column_name `as` new_name
 `distinct` | Eliminate duplicate row from the result | `select distinct` column_name, column_name
 
@@ -97,7 +108,7 @@ Keyword | Usage | Example
 `is null` | Is a `null` value | `where` column_name `is null`
 `and` | Both conditions are true | (credit_limit = 25.00) `and` (first_name = 'SUE')
 `or` | One of the conditions is true | (credit_limit = 25.00) `or` (first_name = 'SUE')
-`not` | The condition is false | `where` column_name `is not null`
+`not` | The condition is false | `where` column_name<br>`not in` (item1, item2)<br>`not between` value1 `and` value2<br>`not like` '%48%'<br>`is not null`
 
 ### SQL uses three-Valued logic
 Either a statement true or it is false. But there could be a third condition. If there can be a `null` value, the condition is unknown. Therefore, `null` values are not included when the `where` clause uses a specific logic condition that excludes them. This is to remind you that a `null` is missing data and it is not like any other value in the table, because it does not have a particular value.
@@ -114,6 +125,8 @@ The three Boolean connectors `and`, `or`, and `not` are strictly controlled:
 - `Not` is applied only to simple conditions. It is not applied to compound conditions that include an `and` or an `or`.
 - `And` is used to combine simple conditions and conditions involving `not`. None of these conditions are allowed to contain an `or`. Many conditions can be combined together with `and`. If there is more than one `and`, the conditions can be combined in any order and no parentheses are required. Each of these compound conditions is usually enclosed in parentheses.
 - `Or` is the top-level connector. It combines all the compound conditions using `and` and `not`. If there is more than one `or`, the compound conditions can be combined in any order and no parentheses are required.
+
+These rules for the standard form help to avoid logic errors and allow the database management system to process queries more efficiently. For example, an `or` condition is inclusive and can take advantage of short-circuiting to match the first true condition.
 
 Overview of the `order by` clause
 ---
@@ -134,6 +147,8 @@ select * from employees order by 1 asc, 2 desc;
 
 Punctuation
 ---
+Problems stemming from incorrect punctuation will usually generate an error, but those errors are not always specific to the problem, so it is good practice to follow these conventions.
+
 ### Spaces ( )
 Column names and table names that have spaces in them can cause trouble if they are not enclosed in double quotes. Instead use an underscore or MixedCase.
 
@@ -157,7 +172,7 @@ A semicolon marks the end of a statement.
 Any words that are recognized by SQL can not be used for column or table names. Adding an underscore is a way to avoid using a reserved word so, it would be acceptable to name a column `from_` or `date_`.
 
 ### Comments (-- or /* */)
-Double dashes can be used to create a comment. The C-style comment can also be used for larger comment blocks.
+Double dashes can be used to create a comment. The C-style comment can also be used for larger comment blocks. Comments can be helpful when debugging larger queries.
 
 ```sql
 /*This is a 
@@ -183,11 +198,10 @@ select * from table_name where column_name = 'FiLtEr';
 
 Functions
 ---
-term | example
+Term | Usage
 --- | ---
-count |
-upper |
-lower |
+count | Get an integer value for the number of records matching a query.
+upper `|` lower | Convert the case of data stored in a table.
 
 Create `Tables` and `Views`
 ---
@@ -197,7 +211,7 @@ A `table` stores data directly on the disk. A `view` stores a `select` statement
 
 `Views` can be used to build other `views`, but the computer must be able to find the `base tables` and will not allow circular definitions.
 
-### The `create table` command
+### The `create table` statement
 The `create table` statement creates a new table. When it is first created, this table will not have any rows of data in it. Each SQL product supports datatypes that differ slightly from other SQL products.
 
 ```sql
@@ -232,6 +246,10 @@ from 1_employees
 where dept_code = 'SAL'
 order by employee_id;
 ```
+
+Modifying the table structure
+---
+### !
 
 Deleting a table
 ---
