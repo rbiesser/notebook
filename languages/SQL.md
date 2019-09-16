@@ -358,4 +358,4 @@ U—Uniqueness constraint
 
 References
 ---
-Patrick, J. J. [SQL Fundamentals, Third Edition](https://www.oreilly.com/library/view/sql-fundamentals-third/9780137156146/) 2008.
+Patrick, John J. [SQL Fundamentals, Third Edition](https://www.oreilly.com/library/view/sql-fundamentals-third/9780137156146/). Pearson Education. 2008.
