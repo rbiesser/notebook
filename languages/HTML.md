@@ -3,31 +3,49 @@ HTML
 
 Contents
 ---
-[Getting Started](#getting-started)  
-[Basic Structure](#basic-structure)  
-[Attributes](#attributes)  
-[Document Head](#document-head)    
-[Body Elements](#body-elements)  
-[Mobile Web Design](#mobile-web-design)  
-[HTML Forms](html-forms)   
-[References](#references)  
+1. [Getting Started](#getting-started)
+1. [Basic Structure](#basic-structure)
+1. [Element Attributes](#element-attributes)
+1. [Document Head](#document-head)
+    1. [Metadata](#metadata)
+1. [Body Elements](#body-elements)
+    1. [Sectioning Elements](#sectioning-elements)
+    1. [Grouping Elements](#grouping-elements)
+        1. [Blocks](#blocks)
+        1. [Lists](#lists)
+    1. [Text-Level Elements](#text-level-elements)
+        1. [Hypertext Links](#hypertext-links)
+    1. [Character Sets and Special Characters](#character-sets-and-special-characters)
+    1. [Embedded Elements](#embedded-elements)
+        1. [Images](#images)
+    1. [Empty Elements](#empty-elements)
+1. [Mobile Web Design](#mobile-web-design)
+1. [HTML Forms](html-forms) 
+1. [References](#references)
 
 ---
 
 Getting Started
 ---
-- HTML stands for HyperText Markup Language.
-- Uses a client/server model to make requests to a [web server](../applications/webserver.md) over http which returns HTML to a [browser](../applications/browsers.md) (the client).
-- Your browser understands how to render content on a page.
-- Traditionally, HTML is a static page. Your browser does not maintain a connection to the server. It makes a new request for each page you visit.
-- [HTML](#) tells the browser **what** to display. [CSS](CSS.md) describes **how** it should look. And, [Javascript](Javascript.md) makes the content **interactive**.
-- You can use any [server-side language](README.md) you want to render HTML/CSS/Javascript to the browser or serve up static HTML pages. Alternatively, the browser can render HTML pages stored on the local filesystem.
-- You can create and edit HTML/CSS/Javascript files with any [text editor](../applications/texteditors.md), but you may prefer a more advanced text editor with syntax highlighting and auto-completion.
-- The basic building block for an HTML document is an opening tag, `<element>`, and a closing tag `</element>`. Check out the [Mozilla Developer Network HTML Reference]() for a complete list of elements. All content in an html document is surrounded by an element's opening and closing tag. This is what we refer to as **syntax**. Elements can be nested, but the closing tags must appear in the reverse order of the opening tags. Note that there are some tags that do not have a closing tag. These tags have special meanings and your browser knows what to do with them by convention.
+HTML stands for HyperText Markup Language.
 
-- There have been a handful of revisions to the HTML standard, but know that the current is HTML5 and basically we agree that there are conventions which require less custom configuring. The standards are managed by the [World Wide Web Consortium (W3C)](https://www.w3.org/)
+Uses a client/server model to make requests to a [web server](../applications/webserver.md) over http which returns HTML to a [browser](../applications/browsers.md) (the client).
 
-- A unique feature of an HTML document is that you can view the source and, in addition, many popular web browsers offer the ability see the source side-by-side with the rendering. This "inspector" view is one of the most useful features in web development.
+Your browser understands how to render content on a page.
+
+Traditionally, HTML is a static page. Your browser does not maintain a connection to the server. It makes a new request for each page you visit.
+
+[HTML](#) tells the browser **what** to display. [CSS](CSS.md) describes **how** it should look. And, [Javascript](Javascript.md) makes the content **interactive**.
+
+You can use any [server-side language](README.md) you want to render HTML/CSS/Javascript to the browser or serve up static HTML pages. Alternatively, the browser can render HTML pages stored on the local filesystem.
+
+You can create and edit HTML/CSS/Javascript files with any [text editor](../applications/texteditors.md), but you may prefer a more advanced text editor with syntax highlighting and auto-completion.
+
+The basic building block for an HTML document is an opening tag, `<element>`, and a closing tag `</element>`. Check out the [Mozilla Developer Network HTML Reference]() for a complete list of elements. All content in an html document is surrounded by an element's opening and closing tag. This is what we refer to as **syntax**. Elements can be nested, but the closing tags must appear in the reverse order of the opening tags. Note that there are some tags that do not have a closing tag. These tags have special meanings and your browser knows what to do with them by convention.
+
+There have been a handful of revisions to the HTML standard, but know that the current is HTML5 and basically we agree that there are conventions which require less custom configuring. The standards are managed by the [World Wide Web Consortium (W3C)](https://www.w3.org/)
+
+A unique feature of an HTML document is that you can view the source and, in addition, many popular web browsers offer the ability see the source side-by-side with the rendering. This "inspector" view is one of the most useful features in web development.
  
 ---
 
@@ -50,7 +68,7 @@ HTML does not render white space, but formatting with indentation and line break
 You can use comments to label different sections of your documents. Comments are not rendered by the browser, but can be viewed by looking at the source of the document.
 
 ---
-## Attributes
+## Element Attributes
 Within each element tag you can specify modifiers known as **attributes**.
 
 ![alt text](img/html/ch1-figure1-3.jpg "Commonly Used Core HTML Attributes")
