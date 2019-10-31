@@ -30,3 +30,11 @@ Windows
 - Visual Studio
 - Notepad++
 - Notepad
+
+Command Line Editors 
+---
+- ed
+- sed
+- awk
+- tr (translate/transliterate)
+- grep (g/re/p)
