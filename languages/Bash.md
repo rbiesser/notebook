@@ -1,9 +1,10 @@
 Bash
 ===
 
-# Expansion
+Expansion
+---
 
-## Wildcards
+### Wildcards
 
 Wildcard | Meaning
 ---|---
@@ -13,7 +14,7 @@ Wildcard | Meaning
 [!characters] | Matches any character not in the set
 ~ | Home directory of the user
 
-## Arithmetic Expansion
+### Arithmetic Expansion
 `$ echo $((expression))` - Use with the math operators [ * / + - % ] and nestable.
 ```
 $ echo $((2 + 2))
@@ -24,15 +25,15 @@ $ echo $(((2 + 2) %2))
 0
 ```
 
-## Brace Expansion
+### Brace Expansion
 `$ echo {pattern1,pattern2}` - Will run for every pattern in the braces and nestable.  
 `$ echo {0..9}` or `$ echo {A..Z}` - A range either increment or decrement from first to last.
 
-## Command Substition
+### Command Substition
 `$ ls -l $(which cp)` - Uses the output of the command in parenthesis.  
 ``$ ls -l `which cp`` ` - Older version with backticks.
 
-## Quotes
+### Quotes
 Use double quotes to suppress word-splitting, pathname expansion, tilde expansion, and brace expansion. Parameter expansion, arithmetic expansion, and command substitution are still carried out.  
 Use singles quotes to suppress all expansions.
 ```
@@ -42,7 +43,7 @@ $ echo 'text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER'
 text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER
 ```
 
-## Escape Characters
+### Escape Characters
 Escape character | Meaning
 ---|---
 \n | newline - move cursor to next line and reset cursor to beginning
