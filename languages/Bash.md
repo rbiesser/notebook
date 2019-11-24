@@ -58,4 +58,4 @@ References
 ---
 http://linuxcommand.org/lc3_lts0080.php
 
-
+http://www.bashoneliners.com/
