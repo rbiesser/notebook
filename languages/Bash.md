@@ -53,9 +53,39 @@ Escape character | Meaning
 \f | formfeed - move down a line keeping cursor position
 \  | escape the space character
 
+Check if a file exists
+---
+Use any of these snippets to check that a FILE variable exists:
+```bash
+# using test expression
+FILE=/etc/resolv.conf
+if test -e "$FILE"; then
+    echo "$FILE exist"
+fi
+
+# single brackets
+FILE=/etc/resolv.conf
+if [ -e "$FILE" ]; then
+    echo "$FILE exist"
+fi
+
+# double brackets
+FILE=/etc/resolv.conf
+if [[ -e "$FILE" ]]; then
+    echo "$FILE exist"
+fi
+
+# or as one line
+test -e /etc/resolv.conf && echo "$FILE exist"
+[ -e /etc/resolv.conf ] && echo "$FILE exist"
+[[ -e /etc/resolv.conf ]] && echo "$FILE exist"
+```
+There are several test conditions that can be done by using different flags. The most common would be `-e` to check if the file exists, `-f` to check if the file exists and is a regular file, or `-d` to check if the file exists and is a directory. See https://linuxize.com/post/bash-check-if-file-exists/#file-test-operators for a more complete list.
 
 References
 ---
 http://linuxcommand.org/lc3_lts0080.php
 
 http://www.bashoneliners.com/
+
+https://linuxize.com/tags/bash/
