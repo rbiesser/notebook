@@ -3,13 +3,13 @@ Databases
 
 Major SQL Products
 ---
-[Oracle](databases/oracle.md)  
+[Oracle](oracle.md)  
 [Microsoft SQL Server](database/sql_server.md)  
 Microsoft Access  
-[MySQL](databases/mysql.md)  
+[MySQL](mysql.md)  
 DB2 (IBM Data Server)[1]  
 Informix  
-[PostgreSQL](databases/postgres.md)  
+[PostgreSQL](postgres.md)  
 Sybase  
 Microsoft Visual FoxPro  
 NonStop SQL  

@@ -5,7 +5,7 @@ The name SQL stands for Structured Query Language. It is pronounced “S-Q-L” 
 
 SQL is a computer language designed to get information from data that is stored in a relational database. Working with a database follows the same basic `CRUD (Create, Read, Update, Delete)` operations. You can then define that operations act on the structure of a table or they act on the data contained within the table.
 
-Standard SQL should be the same for any relational database, however, view the [list of databases](../applications/databases.md) for implementations that deviate from the standard for a specific database.
+Standard SQL should be the same for any relational database, however, view the [list of databases](databases/READMe.md) for implementations that deviate from the standard for a specific database.
 
 [Overview of the select statement](#overview-of-the-select-statement)  
 [Create Tables and Views](#create-tables-and-views)  

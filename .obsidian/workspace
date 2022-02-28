@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "8f21736b6b80cc90",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b2463f32cdcf934",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "template/READMe.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b93e0a777a26ef62",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7526127fcab883e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "feb88c2f6d22cc83",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9d899a0a0152acf4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "85b63c9bdf95fa5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "24440a08f73eaf08",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a06a11cf201b4291",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "template/READMe.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0b2463f32cdcf934",
+  "lastOpenFiles": [
+    "template/READMe.md",
+    "READMe.md",
+    "databases/READMe.md",
+    "databases/rxdb.md",
+    "databases/mongodb.md",
+    "environments/linux/man.md",
+    "environments/linux/distro.md",
+    "security/parrot.md",
+    "security/wireshark.md",
+    "environments/text-editors.md"
+  ]
+}

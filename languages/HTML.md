@@ -29,7 +29,7 @@ Getting Started
 ---
 HTML stands for HyperText Markup Language.
 
-Uses a client/server model to make requests to a [web server](../applications/webserver.md) over http which returns HTML to a [browser](../applications/browsers.md) (the client).
+Uses a client/server model to make requests to a [web server](webserver.md) over http which returns HTML to a [browser](web-browsers.md) (the client).
 
 Your browser understands how to render content on a page.
 
@@ -37,9 +37,9 @@ Traditionally, HTML is a static page. Your browser does not maintain a connectio
 
 [HTML](#) tells the browser **what** to display. [CSS](CSS.md) describes **how** it should look. And, [Javascript](Javascript.md) makes the content **interactive**.
 
-You can use any [server-side language](README.md) you want to render HTML/CSS/Javascript to the browser or serve up static HTML pages. Alternatively, the browser can render HTML pages stored on the local filesystem.
+You can use any [server-side language](READMe.md) you want to render HTML/CSS/Javascript to the browser or serve up static HTML pages. Alternatively, the browser can render HTML pages stored on the local filesystem.
 
-You can create and edit HTML/CSS/Javascript files with any [text editor](../applications/texteditors.md), but you may prefer a more advanced text editor with syntax highlighting and auto-completion.
+You can create and edit HTML/CSS/Javascript files with any [text editor](text-editors.md), but you may prefer a more advanced text editor with syntax highlighting and auto-completion.
 
 The basic building block for an HTML document is an opening tag, `<element>`, and a closing tag `</element>`. Check out the [Mozilla Developer Network HTML Reference]() for a complete list of elements. All content in an html document is surrounded by an element's opening and closing tag. This is what we refer to as **syntax**. Elements can be nested, but the closing tags must appear in the reverse order of the opening tags. Note that there are some tags that do not have a closing tag. These tags have special meanings and your browser knows what to do with them by convention.
 
