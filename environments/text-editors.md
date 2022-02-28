@@ -24,6 +24,7 @@ Universal (Windows/Linux/MacOS)
 - nano
 - pico
 - emacs
+- Obsidian
 
 Windows
 ---

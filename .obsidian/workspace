@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "0b2463f32cdcf934",
+        "id": "f11959d698373b2f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "template/READMe.md",
-            "mode": "source",
+            "file": "technology/READMe.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "template/READMe.md",
+                "file": "technology/READMe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0b2463f32cdcf934",
+  "active": "f11959d698373b2f",
   "lastOpenFiles": [
-    "template/READMe.md",
-    "READMe.md",
-    "databases/READMe.md",
-    "databases/rxdb.md",
-    "databases/mongodb.md",
-    "environments/linux/man.md",
-    "environments/linux/distro.md",
+    "technology/READMe.md",
     "security/parrot.md",
-    "security/wireshark.md",
-    "environments/text-editors.md"
+    "databases/MSSQL.md",
+    "databases/rxdb.md",
+    "databases/READMe.md",
+    "databases/mongodb.md",
+    "databases/mysql.md",
+    "databases/oracle.md",
+    "databases/postgres.md",
+    "READMe.md"
   ]
 }
